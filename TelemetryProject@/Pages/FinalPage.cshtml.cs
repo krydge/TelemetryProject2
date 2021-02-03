@@ -16,6 +16,14 @@ namespace TelemetryProject_.Pages
         {
             return RedirectToPage("./Index");
         }
+        public IActionResult OnPostSecond()
+        {
+            return RedirectToPage("./page2");
+        }
+        public IActionResult OnPostThird()
+        {
+            return RedirectToPage("./page3");
+        }
 
     }
 }

@@ -7,10 +7,10 @@
     <form method="post">
         <button type="submit">Push this button to go to the first page</button>
     </form>
-    <div>
-        <a asp-page="./page2" asp-route-id="2"><button>go to second page</button></a>
-    </div>
-    <div>
-        <a asp-page="./page3" asp-route-id="3"><button>go to third page</button></a>
-    </div>
+    <form method="post">
+        <button asp-page-handler="Second">go to second page</button>
+    </form>
+    <form method="post">
+        <button asp-page-handler="Third">go to third page</button>
+    </form>
 </div>
