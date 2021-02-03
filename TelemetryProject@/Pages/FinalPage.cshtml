@@ -1,0 +1,16 @@
+﻿@page
+@model TelemetryProject_.Pages.FinalPageModel
+@{
+}
+<h1>This is the final page</h1>
+<div class="jumbotron">
+    <form method="post">
+        <button type="submit">Push this button to go to the first page</button>
+    </form>
+    <div>
+        <a asp-page="./page2" asp-route-id="2"><button>go to second page</button></a>
+    </div>
+    <div>
+        <a asp-page="./page3" asp-route-id="3"><button>go to third page</button></a>
+    </div>
+</div>

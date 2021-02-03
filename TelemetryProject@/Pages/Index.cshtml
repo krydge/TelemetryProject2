@@ -1,10 +1,14 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "1'st page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post">
+        <button type="submit">Go to the second page</button>
+    </form>
+    <div>
+        <a asp-page="./FinalPage" asp-route-id="2"><button>go to Final page</button></a>
+    </div>
 </div>

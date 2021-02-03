@@ -21,5 +21,9 @@ namespace TelemetryProject_.Pages
         {
 
         }
+        public IActionResult OnPost()
+        {
+            return RedirectToPage("./page2");
+        }
     }
 }
